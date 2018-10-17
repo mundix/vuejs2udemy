@@ -10,12 +10,9 @@
 <body>
     <div id="vm">
         <ul>
-            <!-- Como mostar el indice  -->
-            <template v-for="(country,index) in countries">
-            <li>
-                {{index + 1}}-{{country.name}}
+            <li v-for="(value,key)  in employee">
+                {{key}}->{{value}}
             </li>
-        </template>    
         </ul>
     </div>
     <script src="js/app.js"></script>
