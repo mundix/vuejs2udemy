@@ -1,39 +1,20 @@
 const app = new Vue ({
-    el:"#app",
+    el:"#vm",
     data:{
-        message: 'Hola mundo',
-        src: 'https://vuejs.org/images/logo.png',
-        products:[],
-        product: {
-            id:'',
-            name:'',
-            description:'',
-            price:'',
-            status:''
-        }
+    //    Ahora vamos a trabajr con computed properties
+        first: 0,
+        second: 0,
+        third: 0,
+        fourth: 0,
+        total: 0 //mismo nombre de la variable que va actualizar.
     },
-    methods: {
-        showMessage: function() {
-            return this.message;
+    //para sumr usamos un metodo llamado computed
+    computed: { //propiedades seran calculadad , si enaguno de etos valores cambia
+        //automaticamente sera calculado 
+        total() {
+            console.log("Change");
+            return this.first + this.second + this.third + this.fourth;
         }
     }
-    // Metodos de instanacias  beforeCreated(), beforeMount()
-    /**
-     * Lista de metodos 
-     * beforeCreate() -> 
-     * created() -> 
-     * //Antes de que salga el DOM
-     * beforeMount() -> 
-     * //Una montada la plantilal en el DOM
-     * mounted() ->
-     * //Antes de actuazliar algo 
-     * beforeUpdate() -> 
-     * // una ves se haya hecho la actualizacion ,
-     * //un bucle durante la app 
-     * update()
-     * //cuando esta terminando la instancia, justo antes
-     * beforeDestroy()
-     * //Justo cuando se destruye 
-     * destroyed() 
-    */
+  
 });
