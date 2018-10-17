@@ -9,6 +9,19 @@
 </head>
 <body>
     <div id="vm">
+        <!-- <img v-bind:src="imagen"> -->
+        <!-- Forma corta de usar esta directiva -->
+        <!-- <img :src="imagen" alt=""> -->
+        
+        <!-- <div v-text="text"></div> -->
+        <!-- Es lo mismoq que esto -->
+        <!-- <div> 
+            {{text}}
+        </div>  -->
+        <!-- Si quiero que l texto aparesca en negrita   -->
+         <div v-html="text"> 
+            {{text}}
+        </div> 
         
     </div>
     <script src="js/app.js"></script>
