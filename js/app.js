@@ -1,7 +1,8 @@
 const app = new Vue ({
     el:"#vm",
     data:{
-        shows:false
+        shows:true,
+        parrafo: 5
     },
     
 });

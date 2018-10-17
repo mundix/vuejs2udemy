@@ -10,11 +10,17 @@
 <body>
     <div id="vm">
         <!-- v-if v-else -->
-        <div v-if="shows">
-            <p>    Primer div</p>
-            <div>Aqui estamos</div>
-        </div>
-        <div v-else>Segundo</div>
+        <!-- Template no se renderisa, no se 
+        muestra en el DOM <template>  -->
+        <template v-if="parrafo == 1">
+            <div>
+                <p>    Primer div</p>
+                <div>Aqui estamos</div>
+            </div>
+        </template>
+        <div v-else-if="parrafo == 2">Segundo</div>
+        <div v-else-if="parrafo == 3">Tercero</div>
+        <div v-else>cuartp</div>
     </div>
     <script src="js/app.js"></script>
 </body>
