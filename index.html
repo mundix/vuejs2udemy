@@ -12,12 +12,13 @@
         <!-- v-if v-else -->
         <!-- Template no se renderisa, no se 
         muestra en el DOM <template>  -->
-        <template v-if="parrafo == 1">
+            <!-- v-show esconde y muestra el elemnto en el dom -->
+        <div v-show="shows">
             <div>
                 <p>    Primer div</p>
                 <div>Aqui estamos</div>
             </div>
-        </template>
+        </div>
         <div v-else-if="parrafo == 2">Segundo</div>
         <div v-else-if="parrafo == 3">Tercero</div>
         <div v-else>cuartp</div>
