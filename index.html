@@ -11,8 +11,11 @@
     <div id="vm">
         <ul>
             <!-- Como mostar el indice  -->
-            <li v-for="country in countries">
-                {{country.name}}
+            <li v-for="(country,index) in countries">
+                {{index + 1}}-{{country.name}}
+            </li>
+            <li v-for="(country,index) of countries">
+                    {{index }}-{{country.name}}
             </li>
         </ul>
     </div>
