@@ -5,13 +5,13 @@ const app = new Vue ({
         first: 0,
         second: 0,
         third: 0,
-        fourth: 0,
-        total: 0 //mismo nombre de la variable que va actualizar.
+        fourth: 0
+        // total: 0 //mismo nombre de la variable que va actualizar.
     },
     //para sumr usamos un metodo llamado computed
     computed: { //propiedades seran calculadad , si enaguno de etos valores cambia
         //automaticamente sera calculado 
-        total() {
+        total:function() {
             console.log("Change");
             return this.first + this.second + this.third + this.fourth;
         }
